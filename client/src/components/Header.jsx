@@ -24,7 +24,7 @@ export default function Header() {
   }, [location.search]);
   return (
     <header className='bg-blue-600 shadow-lg top-0 sticky z-30 p-1'>
-      <div className='flex justify-between items-center max-w-6xl mx-auto p-2 gap-1'>
+      <div className='flex justify-between items-center max-w-6xl mx-auto p-2'>
         <Link to='/'>
           <h1 className='font-bold gap-2 text-sm sm:text-xl flex flex-wrap'>
             <span className='text-white font-bold text-[20px] sm:text-[32px]'>Mekxos</span>
@@ -38,7 +38,7 @@ export default function Header() {
           <input
             type='text'
             placeholder='Search...'
-            className='bg-transparent focus:outline-none w-[110px] sm:w-64'
+            className='bg-transparent focus:outline-none w-[100px] sm:w-64'
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -46,7 +46,7 @@ export default function Header() {
             <FaSearch className='text-slate-600' />
           </button>
         </form>
-        <ul className='flex gap-4 items-center'>
+        <ul className='flex gap-3 items-center'>
           <Link to='/'>
             <li className='hidden text-[18px] sm:inline text-white hover:underline p-1'>
               Home
