@@ -27,7 +27,7 @@ export default function Header() {
       <div className='flex justify-between items-center max-w-6xl mx-auto p-2 gap-1'>
         <Link to='/'>
           <h1 className='font-bold gap-2 text-sm sm:text-xl flex flex-wrap'>
-            <span className='text-white font-bold text-[20px] sm:text-[32px]'>Meksus</span>
+            <span className='text-white font-bold text-[20px] sm:text-[32px]'>Mekxos</span>
             <span className='text-white font-bold text-[20px] sm:text-[32px]'> Properties</span>
           </h1>
         </Link>
