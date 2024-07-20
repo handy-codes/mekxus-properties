@@ -55,22 +55,23 @@ export default function Home() {
           place with ease
         </h1>
         <div className='text-black text-xs sm:text-sm'>
-          Mekxus Properties is the best place to find your next perfect place to
-          live. 
+          <p className='text-[16px] text-justify'>Meksus is a Nigerian startup PropTech. The Web App is developed by the founder <a className='text-blue-700 font-bold underline' href="https://emekaowo-portfolio.netlify.app">Emeka Owo</a> to be a leading real estate company that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional services and making the process of buying and selling properties as smooth as possible.</p>
           <br />
-          We have a wide range of properties for you to choose from. You can as well post your own property briefs. Simply sign in to your profile page with your google account or sign up with email. Next, click on your profile image above to upload a profile picture or create your own briefs.
+          <p className='text-[16px] text-justify'>We have a wide range of properties for you to choose from. You can as well post your own property briefs. Simply sign in to your profile page with your google account or sign up with your email. Next, click on your profile icon above to upload a picture and update your profile. You can now click on Create Listing to create your own property briefs.
+            Finally, when a client click on your brief, he can contact you as the Landlord/Agent and send you an enquiry email.
+          </p>
         </div>
         <Link
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Let's get started with our briefs...
+          <p className='text-[16px]'>Let's get started with our briefs...</p>
         </Link>
         <Link
           to={'/profile'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Or create your own Listings here!
+          <p className='text-[16px] text-justify'>Or create your own Listings here!</p>
         </Link>
       </div>
 
@@ -112,7 +113,7 @@ export default function Home() {
           <div className=''>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold text-slate-600'>Recent places for rent</h2>
-              <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=rent'}>Show more places for rent</Link>
+              <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=rent'}><p className='text-[16px]'> Show more places for rent</p></Link>
             </div>
             <div className='flex flex-wrap gap-4'>
               {rentListings.map((listing) => (
@@ -125,7 +126,7 @@ export default function Home() {
           <div className=''>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold text-slate-600'>Recent places for sale</h2>
-              <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=sale'}>Show more places for sale</Link>
+              <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=sale'}><p className='text-[16px]'> Show more places for sale</p></Link>
             </div>
             <div className='flex flex-wrap gap-4'>
               {saleListings.map((listing) => (

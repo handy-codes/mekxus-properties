@@ -162,8 +162,8 @@ export default function Profile() {
   };
   return (
     <div className='p-3 max-w-lg mx-auto'>
-      <h1 className='text-3xl font-semibold text-center my-3'>Profile</h1>
-      <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
+      <h1 className='text-3xl font-semibold text-center my-2'>Profile</h1>
+      <form onSubmit={handleSubmit} className='flex flex-col gap-4 -mb-4'>
         <input
           onChange={(e) => setFile(e.target.files[0])}
           type='file'
@@ -229,22 +229,25 @@ export default function Profile() {
       <div className='flex justify-between mt-5'>
         <span
           onClick={handleDeleteUser}
-          className='text-red-700 cursor-pointer'
+          className='text-red-700 font-bold text-[15px] cursor-pointer'
         >
-          Delete account
+          Delete Account
         </span>
-        <span onClick={handleSignOut} className='text-red-700 cursor-pointer'>
-          Sign out
+        <button onClick={handleShowListings} className='text-green-700 font-bold text-[10px]w-full'>
+        Show My Listings Below
+      </button>
+
+        <span onClick={handleSignOut} className='text-red-700 font-bold text-[15px] cursor-pointer'>
+          SignOut
         </span>
       </div>
-
       <p className='text-red-700 mt-5'>{error ? error : ''}</p>
       <p className='text-green-700 mt-5'>
         {updateSuccess ? 'User is updated successfully!' : ''}
       </p>
-      <button onClick={handleShowListings} className='text-green-700 w-full'>
+      {/* <button onClick={handleShowListings} className='text-green-700 w-full'>
         Show Listings
-      </button>
+      </button> */}
       <p className='text-red-700 mt-5'>
         {showListingsError ? 'Error showing listings' : ''}
       </p>

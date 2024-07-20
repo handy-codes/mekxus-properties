@@ -24,10 +24,10 @@ export default function Header() {
   }, [location.search]);
   return (
     <header className='bg-blue-600 shadow-lg top-0 sticky z-30 p-1'>
-      <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
+      <div className='flex justify-between items-center max-w-6xl mx-auto p-2 gap-1'>
         <Link to='/'>
           <h1 className='font-bold gap-2 text-sm sm:text-xl flex flex-wrap'>
-            <span className='text-white font-bold text-[20px] sm:text-[32px]'>Mekxus</span>
+            <span className='text-white font-bold text-[20px] sm:text-[32px]'>Meksus</span>
             <span className='text-white font-bold text-[20px] sm:text-[32px]'> Properties</span>
           </h1>
         </Link>
@@ -38,7 +38,7 @@ export default function Header() {
           <input
             type='text'
             placeholder='Search...'
-            className='bg-transparent focus:outline-none w-24 sm:w-64'
+            className='bg-transparent focus:outline-none w-20 sm:w-64'
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -60,12 +60,12 @@ export default function Header() {
           <Link to='/profile'>
             {currentUser ? (
               <img
-                className='rounded-full h-7 w-7 object-cover'
+                className='rounded-full h-7 w-7 mr-3 sm:mr-3 object-cover'
                 src={currentUser.avatar}
                 alt='profile'
               />
             ) : (
-              <li className='text-[18px] text-white hover:underline p-2 bg-primary'> Sign In</li>
+              <li className='text-[18px] text-white hover:underline p-2 bg-primary'> SignIn</li>
             )}
           </Link>
         </ul>
