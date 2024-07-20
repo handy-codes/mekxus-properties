@@ -234,7 +234,7 @@ export default function Profile() {
           Delete Account
         </span>
         <button onClick={handleShowListings} className='text-green-700 font-bold text-[10px]w-full'>
-        Show My Listings Below
+        <p> Show Listings</p>
       </button>
 
         <span onClick={handleSignOut} className='text-red-700 font-bold text-[15px] cursor-pointer'>
